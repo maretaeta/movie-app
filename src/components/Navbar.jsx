@@ -8,15 +8,15 @@ const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
 
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const nav = document.querySelector("nav");
       window.scrollY > 0 ? setSticky(true) : setSticky(false);
     });
   }, []);
-
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
 
   const { isLoggedIn, token, user } = useSelector((state) => state.auth);
 
