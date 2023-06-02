@@ -24,14 +24,14 @@ const MovieDetail = () => {
   };
 
   return (
-    <div className="w-full h-full lg:pb-20">
-      <div className="md:pb-20">
+    <div>
+      <div className="w-full h-full pb-24 lg:pb-20 mx-auto">
         <img
           src={`https://image.tmdb.org/t/p/original/${postDetails?.backdrop_path}`}
+          alt="detailMovie"
           className="h-96 w-full object-cover opacity-50 "
         />
-
-        <div className="absolute top-16 p-3 w-full mx-auto lg:px-10 shadow-o">
+        <div className="absolute top-16 p-5 w-full mx-auto lg:px-10 shadow-o justify-center">
           <div className="py-8 px-5 md:px-10">
             <HiOutlineArrowNarrowLeft
               className="text-white scale-150 "
@@ -39,33 +39,32 @@ const MovieDetail = () => {
             />
           </div>
 
-          <div className="flex gap-4 justify-items-center items-center">
-            <div className="lg:pt-2 md:p-10 justify-items-center items-center">
+          <div className="md:flex md:gap-8 justify-center mx-auto md:pt-14 lg:p-8">
+            <div className="justify-center">
               <img
                 src={`https://image.tmdb.org/t/p/w500/${postDetails?.poster_path}`}
-                alt="movie"
-                className="w-48 md:w-80 lg:w-96 rounded-xl "
+                className="w-52 md:w-80 lg:w-96 xl:w-80 rounded-xl flex justify-center mx-auto"
               />
             </div>
-            <div className="">
-              <h1 className="text-2xl w-full text-white font-bold pt-5 sm:text-4xl md:pt-10 lg:text-5xl">
+            <div className="mx-auto justify-center px-11 md:px-0">
+              <h1 className="text-3xl w-full text-white font-bold pt-5 sm:text-4xl md:pt-10 lg:text-5xl">
                 {postDetails?.title}
               </h1>
-              <div className="py-3 flex md:gap-5 gap-2">
-                <p className="border text-sm border-white text-white w-7 h-6 text-center rounded-sm">
+              <div className="py-3 flex md:gap-5 gap-4">
+                <p className="border text-sm border-red-600 text-white w-7 h-6 rounded-sm text-center">
                   {postDetails?.original_language}
                 </p>
-                <p className="flex gap-2 text-base text-yellow-500">
+                <p className="flex gap-1 text-base text-yellow-500">
                   <AiFillStar className="h-5 text-base pt-1 lg:pt-1" />
                   {postDetails?.vote_average}
                 </p>
               </div>
-              <p className="text-white flex gap-2 md:pt-1 text-xs ">
-                <FaCalendarAlt className="h-5 text-center" />
+              <p className="text-white flex gap-2 md:pt-1 text-base ">
+                <FaCalendarAlt className="h-5 pt-1 text-center" />
                 {postDetails?.release_date}
               </p>
 
-              <p className="text-white text-justify w-44 sm:w-80 md:text-base md:w-[50vw] text-xs py-3 ">
+              <p className="text-white text-justify w-full sm:w-80 md:text-base md:w-[50vw] text-xs py-3 ">
                 {postDetails?.overview}
               </p>
 
