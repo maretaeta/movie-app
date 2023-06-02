@@ -204,12 +204,12 @@ const Navbar = () => {
                     <div>
                       <ul className="items-center text-center">
                         <li className="py-5 ">
-                          <button className="w-20 text-red-600 text-center h-7 text-sm border border-red-600 rounded-full ">
+                          <button className="w-20 text-red-600 text-center h-7 text-sm border border-red-600 rounded-full hover:scale-110">
                             <Link to="/login">Login</Link>
                           </button>
                         </li>
                         <li className="">
-                          <button className="h-7 text-sm px-2 bg-red-600 rounded-full text-white w-20 text-center">
+                          <button className="h-7 text-sm px-2 bg-red-600 rounded-full text-white w-20 text-center hover:scale-110">
                             <Link to="/register">Register</Link>
                           </button>
                         </li>

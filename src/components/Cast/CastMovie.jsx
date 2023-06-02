@@ -7,7 +7,6 @@ const CastMovie = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  // Mengambil data cast dari state
   const cast = useSelector((state) => state.post.postCast);
 
   useEffect(() => {
