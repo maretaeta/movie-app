@@ -96,7 +96,7 @@ const ViewMovie = () => {
                 <img
                   src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                   alt={movie.title}
-                  className="hover:opacity-75 transition ease-in-out duration-150"
+                  className="hover:opacity-75 transition ease-in-out duration-150 rounded-md"
                   onClick={() => handleClickDetail(movie.id)}
                 />
                 <div className="mt-2">

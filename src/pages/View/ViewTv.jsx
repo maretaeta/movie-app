@@ -95,7 +95,7 @@ const ViewTv = () => {
                 <img
                   src={`https://image.tmdb.org/t/p/w500/${tv.poster_path}`}
                   alt={tv.title}
-                  className="hover:opacity-75 transition ease-in-out duration-150"
+                  className="hover:opacity-75 transition ease-in-out duration-150 rounded-md"
                   onClick={() => handleClickDetail(tv.id)}
                 />
                 <div className="mt-2">

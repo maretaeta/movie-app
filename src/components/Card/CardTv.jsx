@@ -46,9 +46,9 @@ const CardTv = () => {
 
   return (
     <div className="p-5 lg:px-10 md:px-10 bg-black">
-      <div className="flex justify-between gap-20 text-white py-6">
+      <div className="flex justify-between gap-20 text-white pt-6 pb-3">
         <div>
-          <h3 className="text-sm md:text-2xl font-semibold uppercase ">
+          <h3 className="text-lg md:text-2xl font-semibold uppercase ">
             <span
               className="relative cursor-pointer transition-all 
         before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-1 before:rounded-full before:opacity-0 before:transition-all

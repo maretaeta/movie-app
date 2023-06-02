@@ -17,7 +17,7 @@ const Footer = () => {
                 iPLAY+
               </span>
             </a>
-            <ul className="flex flex-wrap items-center mb-2 text-sm font-medium text-gray-200 sm:mb-0 ">
+            <ul className="flex flex-wrap items-center pt-2 text-sm font-medium text-gray-200 sm:mb-0 ">
               <li>
                 <Link
                   to="/"
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
           <hr className="my-4 border-gray-200 sm:mx-auto lg:my-5" />
           <span className="block text-sm text-gray-200 text-center">
-            © 2023 MovieTime . All Rights Reserved.
+            © 2023 iPlay+ . All Rights Reserved.
           </span>
         </footer>
       )}
