@@ -50,7 +50,7 @@ function Movie() {
                       <h1 className="text-2xl w-full text-white font-bold pt-7 flex md:text-5xl md:pt-10 lg:text-6xl">
                         {post.title}
                       </h1>
-                      <div className="flex py-3">
+                      <div className="flex py-2">
                         <p className="text-yellow-500 w-6 text-lg lg:pt-1">
                           <AiFillStar />
                         </p>
@@ -58,7 +58,7 @@ function Movie() {
                           {post.vote_average}
                         </p>
                       </div>
-                      <p className="text-white text-[7px] w-72 md:w-full md:text-justify lg:text-base md:text-sm pb-3">
+                      <p className="text-white text-[7px] w-72 md:w-full md:text-justify lg:text-base md:text-sm pb-2">
                         {post.overview}
                       </p>
                       <button className="flex flex-rows gap-2 items-center p-2 lg:p-5 bg-red-600 text-center rounded-xl w-28 lg:w-36 h-7 lg:h-10 text-white text-xs lg:text-sm hover:scale-110">

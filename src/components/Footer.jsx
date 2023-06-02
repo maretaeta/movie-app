@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       {!isLogin && !isRegister && (
-        <footer className="w-full  mx-auto px-10 p-5">
+        <footer className="w-full  mx-auto px-6 p-5">
           <div className="sm:flex sm:items-center sm:justify-between">
             <a className="flex items-center sm:mb-0">
               <span className="self-center text-2xl font-semibold text-red-600">
