@@ -1,1 +1,4 @@
-# movie-app
+# Movie App
+
+npm i
+npm run dev
