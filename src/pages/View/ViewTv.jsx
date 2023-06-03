@@ -56,7 +56,7 @@ const ViewTv = () => {
   };
 
   return (
-    <div className="min-h-screen text-white py-10 pt-20 p-10">
+    <div className="min-h-screen text-white py-10 pt-16 p-10">
       <div className="pt-28">
         <h1 className="text-white text-2xl md:text-3xl font-semibold text-center">
           Popular TV
